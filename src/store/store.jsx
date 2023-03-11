@@ -3,6 +3,6 @@ import DataSlice from "./DataSlice";
 
 export const store = configureStore({
   reducer: {
-    netflix: DataSlice,
+    data: DataSlice,
   },
 });

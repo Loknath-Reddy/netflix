@@ -1,10 +1,10 @@
 import { createSlice } from "@reduxjs/toolkit";
 import data from "./../data/titles.json";
 const initialState = {
-  data: data,
+  data,
 };
 export const DataSlice = createSlice({
-  name: "netflix",
+  name: "data",
   initialState,
   reducers: {},
 });
