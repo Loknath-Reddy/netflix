@@ -4,16 +4,19 @@ import { useSelector } from "react-redux";
 
 export default function Featured() {
   const data = useSelector((state) => state.data.data);
-  console.log(data.movies[4].img);
+
   return (
     <div className="featured">
-      <img src={data.movies[4].img} />
+      <img src={data.movies[1].img} alt="" />
       <div className="info">
         <span className="logo">
-          <img src="https://images.crowdspring.com/blog/wp-content/uploads/2016/06/27132348/netflix-new-logo.png" />
+          <img
+            src="https://images.crowdspring.com/blog/wp-content/uploads/2016/06/27132348/netflix-new-logo.png"
+            alt=""
+          />
         </span>
-        <div className="title">{data.movies[4].title}</div>
-        <span className="desc">{data.movies[4].description}</span>
+        <div className="title">{data.movies[1].title}</div>
+        <span className="desc">{data.movies[1].description}</span>
         <div className="buttons">
           <button className="play">
             <PlayArrow />
